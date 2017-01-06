@@ -40,7 +40,7 @@ public class CustomExpandableListAdapter extends BaseExpandableListAdapter {
     @Override
     public View getChildView(int listPosition, final int expandedListPosition, boolean isLastChild, View convertView, ViewGroup parent) {
         final String expandedListText = (String) getChild(listPosition, expandedListPosition);
-//        Toast.makeText(context, expandedListText, Toast.LENGTH_LONG).show(); // continuous display toast messages
+//      Toast.makeText(context, expandedListText, Toast.LENGTH_LONG).show(); // continuous display toast messages when one ExpandableListView is clicked upTo end.
         if (convertView == null) {
             LayoutInflater layoutInflater = (LayoutInflater) this.context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             convertView = layoutInflater.inflate(R.layout.list_item, null);
